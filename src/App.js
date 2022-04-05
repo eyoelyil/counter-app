@@ -1,21 +1,19 @@
-import Header from "./Header";
-import Main from "./Main";
-import Footer from "./Footer";
+import React from "react";
+import "./App.css";
 
-function App() {
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
+
+// only one parent for returning which is wrapped in a div
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Header />
-      </header>
-      <main>
-        <Main />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+    <div>
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

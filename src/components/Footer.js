@@ -1,10 +1,11 @@
 import React from "react";
+import classses from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <div>
+    <footer className={classses.footer}>
       <p>Made by Eyoel</p>
-    </div>
+    </footer>
   );
 };
 
